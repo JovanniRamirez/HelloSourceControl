@@ -14,3 +14,8 @@ while (num < 10)
     Console.WriteLine(num);
 }
 Console.WriteLine($"Number multiplied by 2 until reaching 10 is {num}");
+
+Console.WriteLine("Enter age");
+int userAge = Convert.ToInt32(Console.ReadLine());
+int yearBorn = DateTime.Now.Year - userAge;
+Console.WriteLine($"User year they were born is estimated at: {yearBorn}.");
